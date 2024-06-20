@@ -1,0 +1,2 @@
+google-cloud-aiplatform[pipelines]==1.12.1
+google-cloud-storage==2.3.0

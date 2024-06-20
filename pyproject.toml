@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "fancy_fashion"
+version = "0.1.0"
+description = ""
+authors = ["Linh Nguyen"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+tensorflow = "^2.8.0"
+Pillow = "^9.0.1"
+matplotlib = "^3.5.1"
+typer = "^0.4.0"
+joblib = "^1.1.0"
+google-cloud-aiplatform = "^1.11.0"
+pandas = "^1.4.1"
+pyarrow = "^7.0.0"
+fastapi = "^0.78.0"
+uvicorn = "^0.17.6"
+python-multipart = "^0.0.5"
+prometheus-client = "^0.14.1"
+prometheus-async = "^22.2.0"
+google-cloud-storage = "1.44.0"
+black = "22.1.0"
+kfp = "^1.8.12"
+mdformat = "^0.7.14"
+pytest = "^7.1.2"
+structlog = "^21.5.0"
+python-dotenv = "^0.20.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.15.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+pre-commit = "^2.17.0"
+ipykernel = "^6.9.2"
+pylint = "^2.13.1"
+pytest = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint.'BASIC']
+good-names = 'X,x,y,i,ii'
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = 'missing-module-docstring,import-error'
